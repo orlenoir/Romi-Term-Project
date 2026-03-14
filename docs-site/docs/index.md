@@ -10,12 +10,12 @@ Olenoir@calpoly.edu, Lrnathan@calpoly.edu, Vpatel43@calpoly.edu
 
 ![Romi overview](assets/images/robot-overview)
 
-
 ## Quick links
 
 - [Course Summary](Course Summary.md)
 - [Results](Results.md)
 - [Resources](Resources.md) 
+- [Term Project](Term Project.md)
 
 ## Note:
 

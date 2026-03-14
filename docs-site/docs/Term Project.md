@@ -1,6 +1,6 @@
 # Term Project
 
-![Project Course](assets/images/Course)
+![Course](assets/images/Course.jpg)
 
 The final project of this class was to combine all of the implemented features and sensors to run the above course. 
 Romi starts in the top left corner, follows the long straight, then makes a right turn into the 'garage'. 
