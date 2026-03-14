@@ -1,0 +1,36 @@
+site_name: ME 405 — Term Project
+site_description: Documentation for an engineering project; motor, encoder, line sensor, IMU drivers + reports + source.
+site_author: Your Name
+repo_url: https://github.com/orlenoir/Romi-Term-Project   # update to your repo
+repo_name: GitHub
+
+theme:
+  name: material
+  language: en
+  palette:
+    scheme: default
+  features:
+    - navigation.instant
+    - navigation.sections
+
+nav:
+  - Home: index.md
+ 
+  - Course Summary: Course Summary.md
+  - Results: Results.md
+  - Resources: Resources.md
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+      permalink: true
+
+extra_css: []     # add custom css file paths here if you make one
+extra_javascript: []
+
+# serve options (optional)
+dev_addr: 127.0.0.1:8000
