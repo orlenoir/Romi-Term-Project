@@ -6,7 +6,7 @@
 
 Olenoir@calpoly.edu, Lrnathan@calpoly.edu, Vpatel43@calpoly.edu
 
-**Project Summary:** building and programming a Pololu Romi robot. This site documents design goals, hardware used, drivers implemented (motors, encoders, line sensor, IMU), test results, and full source code.
+**Project Summary:** building and programming a Pololu Romi robot. This site documents design goals, hardware used, drivers implemented (motors, encoders, line sensor, IMU, bump sensors), test results, and full source code.
 
 ![Romi overview](assets/images/robot-overview)
 

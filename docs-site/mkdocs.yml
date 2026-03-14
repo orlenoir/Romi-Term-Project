@@ -19,6 +19,8 @@ nav:
   - Course Summary: Course Summary.md
   - Results: Results.md
   - Resources: Resources.md
+  - Term Project: Term Project.md
+  
 
 plugins:
   - search
