@@ -24,6 +24,7 @@ nav:
 
 plugins:
   - search
+  - mkdocs-video
 
 markdown_extensions:
   - admonition
