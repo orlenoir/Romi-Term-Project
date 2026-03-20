@@ -1,4 +1,4 @@
-<<<<<<< HEAD:Firmware/heading_nav.py
+<<<<<<< HEAD:firmware/heading_nav.py
 class HeadingNav:
     def __init__(self, turn_speed=0.08, drive_speed=0.08, kp_drive=0.08, heading_tol=2.0):
         self.turn_speed = float(turn_speed)
@@ -90,5 +90,5 @@ class HeadingNav:
 
         vL = self.drive_speed + corr
         vR = self.drive_speed - corr
->>>>>>> ee3ec90 (update files, docs, reports):firmware/heading_nav.py
+>>>>>>> 441140e67c8ea020b13a2f9031ea66f0de0488d8:Firmware/heading_nav.py
         return vL, vR

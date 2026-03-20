@@ -1,4 +1,4 @@
-<<<<<<< HEAD:Firmware/task_recover.py
+<<<<<<< HEAD:firmware/task_recover.py
 import micropython
 import math
 from utime import ticks_ms, ticks_diff
@@ -842,5 +842,5 @@ class task_recover:
                 self._recoverGo.put(False)
                 yield self._state
                 self._state = S0_IDLE
->>>>>>> ee3ec90 (update files, docs, reports):firmware/task_recover.py
+>>>>>>> 441140e67c8ea020b13a2f9031ea66f0de0488d8:Firmware/task_recover.py
                 continue

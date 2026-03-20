@@ -1,4 +1,4 @@
-<<<<<<< HEAD:Firmware/task_estimator.py
+<<<<<<< HEAD:firmware/task_estimator.py
 import micropython
 from utime import ticks_us, ticks_diff
 from ulab import numpy as np
@@ -346,4 +346,4 @@ class task_estimator:
                 self._write_outputs()
 
             yield self._state
->>>>>>> ee3ec90 (update files, docs, reports):firmware/task_estimator.py
+>>>>>>> 441140e67c8ea020b13a2f9031ea66f0de0488d8:Firmware/task_estimator.py

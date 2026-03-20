@@ -1,4 +1,4 @@
-<<<<<<< HEAD:Firmware/line_sensor.py
+<<<<<<< HEAD:firmware/line_sensor.py
 from utime import sleep_ms
 
 
@@ -186,4 +186,4 @@ class QTR8A:
         c = self.centroid()
         e = None if c is None else (c - 3.5)
         return raw, norm, c, e
->>>>>>> ee3ec90 (update files, docs, reports):firmware/line_sensor.py
+>>>>>>> 441140e67c8ea020b13a2f9031ea66f0de0488d8:Firmware/line_sensor.py

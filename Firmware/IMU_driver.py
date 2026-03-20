@@ -1,4 +1,4 @@
-<<<<<<< HEAD:Firmware/IMU_driver.py
+<<<<<<< HEAD:firmware/IMU_driver.py
 
 from pyb import Pin
 from utime import sleep_ms
@@ -326,5 +326,5 @@ class BNO055:
         v = (msb << 8) | lsb
         if v & 0x8000:
             v -= 0x10000
->>>>>>> ee3ec90 (update files, docs, reports):firmware/IMU_driver.py
+>>>>>>> 441140e67c8ea020b13a2f9031ea66f0de0488d8:Firmware/IMU_driver.py
         return v
