@@ -578,38 +578,38 @@
 
   <h1>ReadME</h1>
 
-<h2 id="mainpy">main.py<a class="headerlink" href="#mainpy" title="Permanent link">&para;</a></h2>
+<div><h2 id="mainpy">main.py<a class="headerlink" href="#mainpy" title="Permanent link">¶</a></h2>
 <p>The main entry point of the program. This file initializes all hardware interfaces, creates shared variables, instantiates tasks, and starts the cooperative scheduler that runs the robot's control system. </p>
-<h2 id="cotaskpy">cotask.py<a class="headerlink" href="#cotaskpy" title="Permanent link">&para;</a></h2>
+<h2 id="cotaskpy">cotask.py<a class="headerlink" href="#cotaskpy" title="Permanent link">¶</a></h2>
 <p>Implements the cooperative multitasking scheduler used in the project. It manages task priorities, timing, and execution so multiple control tasks can run concurrently without blocking each other. </p>
-<h2 id="task_sharepy">task_share.py<a class="headerlink" href="#task_sharepy" title="Permanent link">&para;</a></h2>
+<h2 id="task_sharepy">task_share.py<a class="headerlink" href="#task_sharepy" title="Permanent link">¶</a></h2>
 <p>Provides the Share and Queue classes used for communication between tasks. These shared data structures allow tasks to safely exchange information such as sensor readings, velocity commands, and control flags. </p>
-<h2 id="task_userpy">task_user.py<a class="headerlink" href="#task_userpy" title="Permanent link">&para;</a></h2>
+<h2 id="task_userpy">task_user.py<a class="headerlink" href="#task_userpy" title="Permanent link">¶</a></h2>
 <p>Implements the user interface task that communicates with the robot through the serial terminal. It processes commands such as calibration and starting the robot while updating shared variables used by other tasks. </p>
-<h2 id="task_motorpy">task_motor.py<a class="headerlink" href="#task_motorpy" title="Permanent link">&para;</a></h2>
+<h2 id="task_motorpy">task_motor.py<a class="headerlink" href="#task_motorpy" title="Permanent link">¶</a></h2>
 <p>Handles closed-loop control of each motor using encoder feedback. This task reads encoder data, applies the PI control algorithm, and sets the PWM duty cycle required to achieve the desired wheel velocity. </p>
-<h2 id="motor_driverpy">motor_driver.py<a class="headerlink" href="#motor_driverpy" title="Permanent link">&para;</a></h2>
+<h2 id="motor_driverpy">motor_driver.py<a class="headerlink" href="#motor_driverpy" title="Permanent link">¶</a></h2>
 <p>A hardware abstraction class for controlling the Romi motors. It converts control signals from the motor task into PWM outputs and direction signals for the motor driver circuitry. </p>
-<h2 id="encoderpy">encoder.py<a class="headerlink" href="#encoderpy" title="Permanent link">&para;</a></h2>
+<h2 id="encoderpy">encoder.py<a class="headerlink" href="#encoderpy" title="Permanent link">¶</a></h2>
 <p>Implements an interface for reading quadrature encoder signals from the wheel motors. It converts raw timer counts into position and velocity measurements used for motor control and state estimation. </p>
-<h2 id="task_linepy">task_line.py<a class="headerlink" href="#task_linepy" title="Permanent link">&para;</a></h2>
+<h2 id="task_linepy">task_line.py<a class="headerlink" href="#task_linepy" title="Permanent link">¶</a></h2>
 <p>Implements the line-following behavior using data from the line sensor array. It calculates the line position error and adjusts the left and right wheel speeds using a PI control strategy to keep the robot centered on the line. </p>
-<h2 id="line_sensorpy">line_sensor.py<a class="headerlink" href="#line_sensorpy" title="Permanent link">&para;</a></h2>
+<h2 id="line_sensorpy">line_sensor.py<a class="headerlink" href="#line_sensorpy" title="Permanent link">¶</a></h2>
 <p>Provides a driver for the QTR-8A reflective infrared sensor array used for line detection. It reads analog sensor values and computes a centroid that represents the position of the line relative to the robot. </p>
-<h2 id="task_recoverpy">task_recover.py<a class="headerlink" href="#task_recoverpy" title="Permanent link">&para;</a></h2>
+<h2 id="task_recoverpy">task_recover.py<a class="headerlink" href="#task_recoverpy" title="Permanent link">¶</a></h2>
 <p>Controls the robot’s higher-level navigation and recovery behaviors. It manages sequences such as line loss recovery, heading changes, bump sensor responses, and special navigation states. </p>
-<h2 id="heading_navpy">heading_nav.py<a class="headerlink" href="#heading_navpy" title="Permanent link">&para;</a></h2>
+<h2 id="heading_navpy">heading_nav.py<a class="headerlink" href="#heading_navpy" title="Permanent link">¶</a></h2>
 <p>Implements heading-based navigation utilities using IMU data. It allows the robot to maintain or turn to specific headings while driving. </p>
-<h2 id="imu_driverpy">IMU_driver.py<a class="headerlink" href="#imu_driverpy" title="Permanent link">&para;</a></h2>
+<h2 id="imu_driverpy">IMU_driver.py<a class="headerlink" href="#imu_driverpy" title="Permanent link">¶</a></h2>
 <p>Low-level driver for communicating with the BNO055 inertial measurement unit. It reads orientation and angular velocity data used for navigation and heading control. </p>
-<h2 id="imu_taskpy">IMU_task.py<a class="headerlink" href="#imu_taskpy" title="Permanent link">&para;</a></h2>
+<h2 id="imu_taskpy">IMU_task.py<a class="headerlink" href="#imu_taskpy" title="Permanent link">¶</a></h2>
 <p>A task responsible for continuously reading the IMU and updating shared variables with orientation and angular velocity measurements. </p>
-<h2 id="task_estimatorpy">task_estimator.py<a class="headerlink" href="#task_estimatorpy" title="Permanent link">&para;</a></h2>
+<h2 id="task_estimatorpy">task_estimator.py<a class="headerlink" href="#task_estimatorpy" title="Permanent link">¶</a></h2>
 <p>Implements the robot state estimator that tracks position and orientation using encoder and IMU data. It provides estimated state variables used by navigation and control tasks. </p>
-<h2 id="matricespy">Matrices.py<a class="headerlink" href="#matricespy" title="Permanent link">&para;</a></h2>
+<h2 id="matricespy">Matrices.py<a class="headerlink" href="#matricespy" title="Permanent link">¶</a></h2>
 <p>Contains the state-space matrices used by the estimator model. These matrices define the mathematical relationship between system inputs, states, and outputs. </p>
-<h2 id="matrix-calculationspy">Matrix calculations.py<a class="headerlink" href="#matrix-calculationspy" title="Permanent link">&para;</a></h2>
-<p>A helper script used to compute or verify the matrices used by the estimator. This file is typically used offline for development and testing rather than running on the robot. </p>
+<h2 id="matrix-calculationspy">Matrix calculations.py<a class="headerlink" href="#matrix-calculationspy" title="Permanent link">¶</a></h2>
+<p>A helper script used to compute or verify the matrices used by the estimator. This file is typically used offline for development and testing rather than running on the robot. </p></div>
 
 
 
